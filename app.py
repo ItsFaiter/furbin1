@@ -20,16 +20,7 @@ loosers_list = []
 
 def refreshLoosers():
     global loosers_list
-    with open(os.path.join(DATA, "hol.json"), "r", encoding="utf-8") as file:
-       # data = json.load(file)
-
-    if not(len(loosers_list) == len(data["loosers"])):
-        loosers_list = []
-        for looser in data["loosers"]:
-            if isinstance(looser, dict):
-               # loosers_list.append(looser)
-
-
+    
 def refreshAdminPosts():
     global admin_posts_list
     admin_posts_file_list = os.listdir(ADMIN_PASTES)
